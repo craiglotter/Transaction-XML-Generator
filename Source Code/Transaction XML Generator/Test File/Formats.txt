@@ -1,0 +1,21 @@
+struct _CURRENTSHIFT
+{
+    unsigned int Number;
+    unsigned int Channel1;
+    unsigned int Channel2;
+    unsigned int Channel3;
+    unsigned int Channel4;
+    unsigned int Channel5;
+    unsigned int Channel6;
+    TDateTime DateTime;
+};
+
+struct _CURRENTXACTION
+{
+    unsigned long ShiftNumber;
+    unsigned long TransactionNumber;
+    unsigned long Amount;
+    unsigned long DateTime;
+    unsigned char CardNumber[10];
+    bool TransactionDataAvailable;
+};
